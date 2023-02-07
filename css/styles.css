@@ -77,6 +77,9 @@ body {
   letter-spacing: 0.02em;
 }
 
+b{padding: 0;
+margin: 0;}
+
 p{
   margin-top: 0;
   margin-bottom: 0;
@@ -522,9 +525,13 @@ color: var(--client-border-color);
 
 }
 .title.footer{
+  display: block;
 margin: 0;
 margin-bottom: 16px;
 padding: 0;
+
+font-size: 16px;
+line-height: 1.5;
   color: var(--title-footer-text);
   
 }
@@ -564,7 +571,7 @@ padding: 0;
 }
 
 .social-footer-item:not(:last-child){
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 /* Footer-Form */
@@ -583,7 +590,8 @@ padding: 0;
   width: 264px;
   height: 40px;
 
-  margin-top: 16px;
+  margin-right: 24px;
+
     
     padding-top: 8px;
     padding-right: 16px;
@@ -620,7 +628,7 @@ transition: border-color 250ms var(--cubic-time-function);
   display: flex;
   align-items: center;
 
-  margin-top: 40px;
+ 
   padding: 8px 24px 8px 24px;
 
   box-shadow: none;
@@ -799,7 +807,7 @@ height: 100%;
   min-width: 408px;
   min-height: 576px;
   
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
 
   background-color: var(--modal-bgc);
@@ -836,11 +844,17 @@ height: 100%;
     background-color: var(--primery-btn-hover);
   }
 
-  .title.modaltext{
-   margin-top: 48px;
+  .modaltext{
+    display: block;
    margin-bottom: 14px;
     
-    font-size: 16px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+
+text-align: center;
+letter-spacing: 0.02em;
+  
 
   }
 
@@ -855,7 +869,7 @@ height: 100%;
   .label{
   display: block;
     color: var(--modal-label-color);
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 
    
     font-size: 12px;
